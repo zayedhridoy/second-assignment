@@ -1,0 +1,152 @@
+/* fonts ------------ */
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: whitesmok;
+}
+/* header style ---------------------- */
+header>p{
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 7%;
+}
+h1{
+    font-size: 50px;
+    font-weight: 700;
+}
+h2{
+    font-weight: 700;
+    font-size: 35px;
+}
+h3{
+    font-weight: 700;
+}
+.container{
+    display: flex;
+    margin-bottom: 150px;
+}
+.first-part{
+    background-image: url(images/Circle\ design.svg);
+    background-position: right;
+    background-repeat: no-repeat;
+    margin-right: 5%;
+    margin-left: 2%;
+}
+.half-width{
+    width: 50%;
+    padding-left: 5%;
+}
+.half-width img{
+    width: 80%;
+    margin-left: 10%;
+
+}
+/* link button style ------------------ */
+.link-button{
+    text-decoration: none;
+    background-color: rgb(238, 48, 127);
+    color: white;
+    font-weight: 700;
+    padding: 5px 30px;
+    border-radius: 20px;
+}
+/* second part style ---------------------- */
+.second-part{
+    text-align: center;
+    margin-left: 2%;
+}
+.collections{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 2%;
+    margin-top: 50px;
+}
+.product-banner img{
+    width: 300px;
+    height: 256px;
+}
+.product{
+    align-items: center; 
+    padding-left: 5px;
+    margin-top: 20px;
+    box-shadow: 10px 10px 10px gray;
+}
+.fa-star{
+    color: goldenrod;
+}
+#link{
+    color: rgb(243, 23, 170);
+    text-decoration: none;
+    font-weight: 700;
+}
+#hyperlink{
+    text-align: right;
+    margin-right: 100px;
+    margin-top: 30px;
+}
+/* hr tag ---------------- */
+hr{
+    border: 1px solid rgb(241, 230, 230);
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+/* third part -------------------------- */
+#imagee{
+    size: 150px;
+}
+#color{
+    color: rgb(238, 71, 155);
+}
+/* footer -------------- */
+#footer{
+    background-color: rgb(17, 16, 16);
+    color: rgb(244, 255, 249);
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+
+}
+/*-----------------------------------
+ media queries 
+------------------------------------ */
+
+/* for phone 
+------------------ */
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    .collections,.product {
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
+    }
+    .first-part, .third-part{
+        flex-direction: column;
+        background-position: bottom;
+        background-size: 100%;
+    }
+    .half-width img{
+        width: 300px;
+        height: 300px;
+        margin-top: 100px;
+    }
+    
+    
+}
+/* for tabs 
+----------------- */
+@media only screen and (min-width:688px) and  (max-width:992px) {
+    .container{
+        width: 100%;
+    }
+    .collections, .product{
+        grid-template-columns: repeat(2, 1fr);
+    } 
+    .half-width{
+        flex-direction: column;
+    }
+}
